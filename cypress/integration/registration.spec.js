@@ -1,4 +1,4 @@
-describe('My Second Test', () => {
+describe('User needs to', () => {
 let user;
 
     before(function () {
@@ -7,7 +7,7 @@ let user;
         });
     });
 
-    it('Sign up with faker', () => {
+    it('sign up with faker', () => {
         cy.visit('https://cirosantilli-realworld-next.herokuapp.com/');
         cy.get(':nth-child(3) > .nav-link').click();
         cy.get(':nth-child(1) > .form-control').type(user.username);
